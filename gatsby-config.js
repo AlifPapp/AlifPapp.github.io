@@ -7,6 +7,9 @@ module.exports = {
     siteUrl: `https://alifpapp.me`,
     pathPrefix: '/',
   },
+  flags: {
+    DEV_SSR: true
+  },
   plugins: [
     'gatsby-plugin-postcss',
     {
@@ -14,6 +17,13 @@ module.exports = {
       options: {
         "icon": "src/images/icon.png"
       }
-    }
+    },
+    'gatsby-plugin-cname',
+    {
+      resolve: `gatsby-plugin-cname`,
+      options: {
+        hostname: `alifpapp.me`,
+      },
+    },
   ]
 };

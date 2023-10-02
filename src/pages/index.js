@@ -1,6 +1,5 @@
 import * as React from "react"
 import Background from "../components/Background"
-import CenteredDiv from "../components/CenteredDiv"
 
 import icon from "../images/icon.png"
 
@@ -14,7 +13,7 @@ const IndexPage = () => {
     <main>
       <Background />
 
-      <CenteredDiv className="flex flex-col items-center text-center">
+      <div className="flex flex-col text-center items-center justify-center min-h-screen">
         <div>
           <div className="sm:inline-block sm:align-middle">
             <img src={icon} alt="profile" className="ml-5 w-28 object-cover object-center border-2 border-solid border-white rounded-full"></img>
@@ -38,7 +37,7 @@ const IndexPage = () => {
             <a href="/youtube" target="blank" aria-label="Youtube"><FontAwesomeIcon icon={faYoutube} /></a>
           </div>
         </div>
-      </CenteredDiv>
+      </div>
     </main>
   )
 }

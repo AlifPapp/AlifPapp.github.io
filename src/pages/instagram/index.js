@@ -1,10 +1,23 @@
-import React from "react"
-import SocialRedirect from "../../components/SocialRedirect"
+import React, { useEffect } from "react";
 
-const InstagramPage = () => {
-  return <SocialRedirect platform="instagram" />
-}
+var link = "https://www.instagram.com/alif_papp/";
 
-export default InstagramPage
+const Link = () => {
+    // Redirect to support link
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.location.replace(link);
+        }
+    }, []);
 
-export const Head = () => <title>Instagram</title>
+    return (
+        <div>
+            <p>If auto-redirect fails, click the link below.</p>
+            <a href={link}>link</a>
+        </div>
+    );
+};
+
+export default Link;
+
+export const Head = () => <title>Instagram</title>;

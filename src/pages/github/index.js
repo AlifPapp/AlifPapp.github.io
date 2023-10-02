@@ -1,10 +1,23 @@
-import React from "react"
-import SocialRedirect from "../../components/SocialRedirect"
+import React, { useEffect } from "react";
 
-const GithubPage = () => {
-  return <SocialRedirect platform="github" />
-}
+var link = "https://github.com/AlifPapp/";
 
-export default GithubPage
+const Link = () => {
+    // Redirect to support link
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.location.replace(link);
+        }
+    }, []);
 
-export const Head = () => <title>Github</title>
+    return (
+        <div>
+            <p>If auto-redirect fails, click the link below.</p>
+            <a href={link}>link</a>
+        </div>
+    );
+};
+
+export default Link;
+
+export const Head = () => <title>Github</title>;
