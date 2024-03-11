@@ -1,0 +1,95 @@
+.card {
+    @apply overflow-hidden rounded-lg border-0;
+    @apply bg-white border-white bg-opacity-30 dark:bg-neutral-900 dark:border-neutral-900;
+    @apply shadow-2xl shadow-black/50 dark:shadow-neutral-300/25;
+}
+
+.card-content {
+    @apply flex flex-col items-center justify-center w-64 h-96 relative max-w-sm px-4 py-4;
+    z-index: 5;
+
+    img {
+        @apply flex-none w-[80%];
+    }
+
+    .card-text {
+        @apply flex-grow flex-col w-full items-center justify-center;
+
+        h3 {
+            @apply mt-2 text-2xl font-medium text-center text-neutral-100 dark:text-neutral-300;
+        }
+
+        p {
+            @apply text-sm font-normal text-justify text-neutral-200 dark:text-gray-400 drop-shadow-lg;
+        }
+    }
+
+    a {
+        @apply inline-block flex-none mt-3 items-center justify-center px-4 py-2 text-sm font-medium rounded-md;
+        @apply shadow-md shadow-black/25 dark:shadow-neutral-400/25;
+        color: var(--CardButtonTextColor);
+        background-color: var(--CardButtonColor);
+
+        &:hover {
+            background-color: var(--CardButtonHoverColor);
+        }
+
+        &:after {
+            @apply content-[""] block h-[2.6px] w-0 transition-all ease-in-out duration-200;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            @apply no-underline;
+
+            &:after {
+                background-color: var(--CardButtonUnderlineColor);
+                width: calc(100% - 20px - 0.5rem);
+            }
+        }
+
+        .fa-circle-chevron-right {
+            @apply text-base inline-block ml-2;
+        }
+    }
+}
+
+.cards:hover>.card::after {
+    @apply opacity-100;
+}
+
+.card:hover::before {
+    @apply opacity-100;
+}
+
+.card::before,
+.card::after {
+    @apply h-full left-0 opacity-0 absolute top-0 w-full content-[""];
+    @apply transition-opacity duration-500 ease-in-out;
+}
+
+.card::before {
+    background: radial-gradient(350px circle at var(--mouse-x) var(--mouse-y),
+            rgba(255, 255, 255, 0.06), transparent 80%);
+    z-index: 3;
+}
+.card::after {
+    background: radial-gradient(250px circle at var(--mouse-x) var(--mouse-y),
+            rgba(249, 216, 139, 0.7), transparent 80%);
+    z-index: 1;
+}
+
+.dark {
+    .card::before {
+        background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+                rgba(255, 255, 255, 0.03), transparent 30%);
+        z-index: 3;
+    }
+
+    .card::after {
+        background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+                rgba(255, 255, 255, 0.2), transparent 30%);
+        z-index: 1;
+    }
+}

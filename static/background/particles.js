@@ -104,7 +104,6 @@ var particles_settings = {
     "retina_detect": true
 };
 
-
 // refresh particles on window resize
 var rtime;
 var timeout = false;
@@ -127,7 +126,14 @@ function resizeend() {
     }
 }
 
-// particles.js
+/* -----------------------------------------------
+/* Author : Vincent Garreau  - vincentgarreau.com
+/* MIT license: http://opensource.org/licenses/MIT
+/* Demo / Generator : vincentgarreau.com/particles.js
+/* GitHub : github.com/VincentGarreau/particles.js
+/* How to use? : Check the GitHub README
+/* v2.0.0
+/* ----------------------------------------------- */
 function hexToRgb(e) {
     var a = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
     e = e.replace(a, function (e, a, t, i) {

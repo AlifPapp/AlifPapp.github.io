@@ -1,4 +1,4 @@
-background{
+background {
 	position: fixed !important;
 	left: 0 !important;
 	top: 0 !important;
@@ -8,6 +8,8 @@ background{
 }
 
 .clouds,
+.clouds2,
+.sky,
 .stars,
 .twinkling,
 .particles {
@@ -21,6 +23,10 @@ background{
 	height: 100%
 }
 
+.sky {
+	z-index: -5;
+	background: linear-gradient(to bottom, #0130BC, #3F8CCF);
+}
 .stars {
 	z-index: -4;
 	background: #000 url(images/stars.png) repeat top
@@ -32,15 +38,15 @@ background{
 	-moz-animation: move-twink-back 200s linear infinite;
 	animation: move-twink-back 200s linear infinite
 }
-.clouds {
+.particles {
 	z-index: -2;
+}
+.clouds {
+	z-index: -1;
 	background: transparent url(images/clouds.png) repeat top;
 	-webkit-animation: move-clouds-back 200s linear infinite;
 	-moz-animation: move-clouds-back 200s linear infinite;
 	animation: move-clouds-back 200s linear infinite
-}
-.particles {
-	z-index: -1;
 }
 
 @-webkit-keyframes move-twink-back {

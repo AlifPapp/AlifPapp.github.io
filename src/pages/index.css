@@ -1,2 +1,36 @@
+/* Profile Picture */
+.pfp {
+    animation: sun-flicker 6s infinite alternate;
+}
 
+@keyframes sun-flicker {
+    0% {
+        box-shadow: 0px 0px 100px 60px #f9d88b;
+    }
 
+    33% {
+        box-shadow: 0px 0px 90px 40px #f9d88b;
+    }
+
+    100% {
+        box-shadow: 0px 0px 100px 60px #f9d88b;
+    }
+}
+
+.dark .pfp {
+    animation: moon-flicker 6s infinite alternate;
+}
+
+@keyframes moon-flicker {
+    0% {
+        box-shadow: 0px 0px 100px 0px white;
+    }
+
+    50% {
+        box-shadow: 0px 0px 90px -3px white;
+    }
+
+    100% {
+        box-shadow: 0px 0px 100px 0px white;
+    }
+}
