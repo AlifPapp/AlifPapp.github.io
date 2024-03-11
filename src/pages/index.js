@@ -60,7 +60,7 @@ const IndexPage = () => {
       </section>
 
       {/* Projects */}
-      <section className="snap-always snap-start flex flex-col items-center justify-center min-h-screen py-24">
+      <section className="snap-always snap-start flex flex-col items-center justify-center min-h-screen py-8 md:py-24">
         <div className="flex flex-col w-full max-w-2xl px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white dark:text-neutral-200">
             <span>Projects</span>
@@ -69,8 +69,8 @@ const IndexPage = () => {
             <span>Here are some of the projects I have worked on.</span>
           </p>
         </div>
-        <div className="mt-4 md:mt-8 p-24">
-          <div className="cards grid grid-cols-1 md:grid-cols-3 gap-6" ref={cardsContainerRef} onMouseMove={handleMouseMove}> {/* md:grid-cols-3; change when theres at least 3*/}
+        <div className="mt-4 md:mt-8 py-4 md:py-24">
+          <div className="cards grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6" ref={cardsContainerRef} onMouseMove={handleMouseMove}> {/* md:grid-cols-3; change when theres at least 3*/}
 
             <Card
               title="Counter"
@@ -114,8 +114,6 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
-
     </div>
   )
 }
