@@ -74,7 +74,7 @@ const IndexPage = () => {
 
             <Card
               title="Counter"
-              description="Count and collect emojis with Counter. As you count higher, earn coins to unlock new fonts."
+              description="Discord bot for counting, collect coins as you count and unlock new fonts."
               imageSrc={counter_icon}
               websiteLink="https://counterbot.xyz/"
               buttonStyles={{
