@@ -55,6 +55,7 @@
     }
 }
 
+/* Mouse Glow Light */
 .cards:hover>.card::after {
     @apply opacity-100;
 }
@@ -86,7 +87,7 @@
                 rgba(255, 255, 255, 0.03), transparent 30%);
         z-index: 3;
     }
-
+    
     .card::after {
         background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
                 rgba(255, 255, 255, 0.2), transparent 30%);
