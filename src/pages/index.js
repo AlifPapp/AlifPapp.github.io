@@ -69,7 +69,7 @@ const IndexPage = () => {
             <span>Here are some of the projects I have worked on.</span>
           </p>
         </div>
-        <div className="mt-4 md:mt-8 py-4 md:py-24">
+        <div className="mt-4 md:mt-8 py-4 md:py-6">
           <div className="cards grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6" ref={cardsContainerRef} onMouseMove={handleMouseMove}> {/* md:grid-cols-3; change when theres at least 3*/}
 
             <Card

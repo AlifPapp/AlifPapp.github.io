@@ -5,11 +5,11 @@
 }
 
 .card-content {
-    @apply flex flex-col items-center justify-center w-auto max-w-[16rem] h-96 relative px-4 py-4;
+    @apply flex flex-col items-center justify-center w-auto max-w-[14rem] h-80 relative px-4 py-4;
     z-index: 5;
 
     img {
-        @apply flex-none w-48;
+        @apply flex-none w-32;
     }
 
     .card-text {
