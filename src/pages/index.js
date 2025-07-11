@@ -76,7 +76,7 @@ const IndexPage = () => {
               title="Counter"
               description="Discord bot for counting, collect coins as you count and unlock new fonts."
               imageSrc={counter_icon}
-              websiteLink="https://counterbot.xyz/"
+              websiteLink="https://counterbot.app/"
               buttonStyles={{
                 "--CardButtonColor": "rgb(79 70 229)",
                 "--CardButtonHoverColor": "rgb(49 40 199)",
