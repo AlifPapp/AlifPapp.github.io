@@ -7,6 +7,7 @@ import Card from "../components/Card"
 
 import icon from "../images/icon.png"
 import counter_icon from "../images/counter_icon.png"
+import logo_lsf from "../images/logo_lsf.webp"
 import ffbd55 from "../images/#ffbd55.png"
 import b2d9ff from "../images/#b2d9ff.png"
 
@@ -66,7 +67,7 @@ const IndexPage = () => {
             <span>Projects</span>
           </h1>
           <p className="mt-4 md:mt-6 text-lg md:text-xl text-gray-200 dark:text-gray-400">
-            <span>Here are some of the projects I have worked on.</span>
+            <span>Here are some notable projects I have worked on.</span>
           </p>
         </div>
         <div className="mt-4 md:mt-8 py-4 md:py-6">
@@ -86,15 +87,15 @@ const IndexPage = () => {
             />
 
             <Card
-              title="Placeholder"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-              imageSrc={ffbd55}
-              websiteLink="https://alifpapp.me/"
+              title="LSF"
+              description="Built a website for LSF Tree & Fencing Specialists"
+              imageSrc={logo_lsf}
+              websiteLink="https://www.lsfservicingfnq.com/"
               buttonStyles={{
-                "--CardButtonColor": "rgb(255 189 85)",
-                "--CardButtonHoverColor": "rgb(225 159 55)",
-                "--CardButtonTextColor": "black",
-                "--CardButtonUnderlineColor": "black"
+                "--CardButtonColor": "rgb(14 159 80)",
+                "--CardButtonHoverColor": "rgb(11, 129, 65)",
+                "--CardButtonTextColor": "white",
+                "--CardButtonUnderlineColor": "white"
               }}
             />
 
